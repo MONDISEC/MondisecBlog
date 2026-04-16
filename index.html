@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vibrant Blog | Home</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts & Font Awesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="site-header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html">✨ NeonBlog</a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <!-- Search Bar with Predictive Dropdown -->
+            <div class="search-wrapper">
+                <input type="text" id="searchInput" placeholder="Search posts..." autocomplete="off">
+                <i class="fas fa-search search-icon"></i>
+                <div id="predictiveResults" class="predictive-dropdown"></div>
+            </div>
+            <button class="mobile-menu-toggle" aria-label="Menu"><i class="fas fa-bars"></i></button>
+        </div>
+    </header>
+
+    <!-- Main Content Area with Sidebar -->
+    <main class="container main-grid">
+        <!-- Blog Posts Feed -->
+        <section class="blog-feed">
+            <h1 class="feed-title">Latest Stories</h1>
+            
+            <article class="post-card">
+                <div class="post-thumb">
+                    <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=600&auto=format" alt="Colorful lights">
+                </div>
+                <div class="post-content">
+                    <h2><a href="post.html">How to Design with Vibrant Colors</a></h2>
+                    <div class="post-meta"><span>June 10, 2026</span> · 5 min read</div>
+                    <p>Embrace neon pinks and purples without overwhelming your readers. Learn the secrets of balanced vibrant design...</p>
+                    <a href="post.html" class="read-more">Read More →</a>
+                </div>
+            </article>
+
+            <article class="post-card">
+                <div class="post-thumb">
+                    <img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=600&auto=format" alt="Music and creativity">
+                </div>
+                <div class="post-content">
+                    <h2><a href="post.html">10 Must‑Have Plugins for Your New Blog</a></h2>
+                    <div class="post-meta"><span>May 28, 2026</span> · 7 min read</div>
+                    <p>From SEO to security, these essential tools will supercharge your WordPress or static site...</p>
+                    <a href="post.html" class="read-more">Read More →</a>
+                </div>
+            </article>
+
+            <article class="post-card">
+                <div class="post-thumb">
+                    <img src="https://images.unsplash.com/photo-1504805572947-34fad45aed93?w=600&auto=format" alt="Mobile devices">
+                </div>
+                <div class="post-content">
+                    <h2><a href="post.html">Mobile‑First Design: Why It Matters</a></h2>
+                    <div class="post-meta"><span>May 12, 2026</span> · 4 min read</div>
+                    <p>Over 60% of traffic comes from phones. Make sure your blog looks perfect on every screen...</p>
+                    <a href="post.html" class="read-more">Read More →</a>
+                </div>
+            </article>
+        </section>
+
+        <!-- Sidebar with Widgets -->
+        <aside class="sidebar">
+            <!-- About Widget -->
+            <div class="widget about-widget">
+                <h3>Hey, I'm Sandiso</h3>
+                <img src="sandiso.jpg" alt="Author" class="author-avatar">
+                <p>Writer & designer passionate about bold colors and clean code. This blog is where I share tips for creating a standout online presence.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+
+            <!-- Recent Posts Widget -->
+            <div class="widget">
+                <h3>Recent Posts</h3>
+                <ul class="recent-posts">
+                    <li><a href="post.html">How to Design with Vibrant Colors</a></li>
+                    <li><a href="post.html">10 Must‑Have Plugins</a></li>
+                    <li><a href="post.html">Mobile‑First Design</a></li>
+                </ul>
+            </div>
+
+            <!-- Popular Posts Widget -->
+            <div class="widget">
+                <h3>Popular This Week</h3>
+                <ul class="popular-posts">
+                    <li><a href="post.html">The Psychology of Pink</a></li>
+                    <li><a href="post.html">Neon Typography Trends</a></li>
+                    <li><a href="post.html">SEO for Creative Blogs</a></li>
+                </ul>
+            </div>
+
+            <!-- Newsletter CTA Widget -->
+            <div class="widget cta-widget">
+                <h3>Stay Inspired</h3>
+                <p>Get weekly tips on design & blogging – straight to your inbox.</p>
+                <form id="newsletterForm">
+                    <input type="email" placeholder="Your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+                <p class="small">No spam, unsubscribe anytime.</p>
+            </div>
+        </aside>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <div class="footer-col">
+                <h4>NeonBlog</h4>
+                <p>Crafting vibrant stories since 2026.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Follow</h4>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 NeonBlog. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
